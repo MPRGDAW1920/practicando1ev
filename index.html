@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel=stylesheet  href="estilos.css">
+        <title>Examen 1 Evaluación</title>
+    </head>
+    <body>
+        
+        <h1 id="autor">Autor: Maria Pilar Rodes</h1>
+        
+        <form>
+            
+        <fieldset>
+			<legend> Datos de la compra</legend>
+               
+            <span class="grupo">
+                <label class="etiqueta" for="categoria" >Categoría</label>
+                <select  class="controlc" id="categoria" name="categoria" required >
+                    <option value="libro" selected="selected">Libro</option>
+                    <option value="CD">CD</option>
+                    <option value="DVD">DVD</option>
+                </select>
+            </span>
+
+			<span class="grupo"><label class="etiqueta" for="nombreproducto" >Nombre del producto</label> 
+				<input class="control" class="control" name="nombreproducto" placeholder="Nombre Producto" id="nombreproducto" 
+				required type="text" value=""/>
+			</span>
+
+            <span class="grupo"><label class="etiqueta" for="fechacompra">Fecha de compra</label>
+				<input placeholder="fecha de compra" class="control" name="fechacompra"  id="fechacompra" 
+				required  type="date" value=""/>
+			</span>
+		</fieldset>
+
+        <fieldset>
+		
+			<legend>Información personal</legend>
+                  
+            <span class="grupo"><label class="etiqueta" for="apellidos">Apellidos</label> 
+				<input class="control" placeholder="Apellidos" name="apellidos" id="apellidos"  
+				required type="text"/>
+			</span>
+
+            <span class="grupo"><label class="etiqueta" for="nombre">Nombre</label>
+				<input class="control" placeholder="Nombre" name="nombre" id="nombre"
+				required type="text"/>
+			</span>
+
+             <span class="grupo"><label class="etiqueta" for="edad">Edad</label>
+				<input class="control" placeholder="edad" name="edad" id="edad" 
+				required type="number"/>
+			</span>
+	
+            <span class="grupo"><label class="etiqueta" for="nif">NIF</label>
+				<input class="control" name="nif" placeholder="NIF"
+				required  id="nif" maxlength='9' type="text"/>
+			</span>
+		</fieldset>
+
+            <fieldset>
+			<legend>Información de envío</legend>
+            
+            
+           <span class="grupo"> <label  class="etiqueta" for="direccion">Dirección</label> 
+				<input  placeholder="Dirección" class="control" name="direccion" id="direccion" 
+				required type="text"/>
+			</span>
+
+			<span class="grupo"><label class="etiqueta" for="ciudad">Ciudad</label>
+				<input class="control" name="ciudad" placeholder="Ciudad" id="ciudad" 
+				required type="text"/>
+			</span>
+            
+             <span class="grupo"><label class="etiqueta" for="provincia">Provincia</label>
+				<input  class="control" placeholder="Provincia" name="provincia" id="provincia" 
+				required type="text"/>
+			</span>
+            
+             <span class="grupo"> <label class="etiqueta"  for="codpostal">Código postal</label> 
+				<input  placeholder="Codigo Postal" class="control" id="codpostal" 
+				required name="codpostal" type="text"/>
+			</span>
+			
+			<span class="grupo"><label class="etiqueta" for="telefono">Teléfono:</label>
+				<input class="control" class="control" placeholder="Telefono" name="telefono" id="telefono"
+				required type="text"/>
+			</span>
+
+			<span class="grupo"><label class="etiqueta" for="email">Correo electrónico:</label> 
+				<input class="control" name="email" placeholder="Correo Electronico" id="email" 
+				required type="email"/>
+			</span>
+		</fieldset>
+
+ <fieldset>
+	
+	<legend> Otros </legend>
+	<span class="grupo">
+		<label class="etiqueta" for="info"> Información adicional </label>
+		<textarea id="info" class ="control textcontrol" placeholder="información adicional "name="info"></textarea>
+	</span>
+</fieldset>	
+ 
+ <span>
+	<input class ="boton"value="Enviar" type="submit"/>
+ </span> 
+ 
+ </form>
+ 
+ </body>
+</html>
